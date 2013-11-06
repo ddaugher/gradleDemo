@@ -1,0 +1,5 @@
+System.out.println("The Forge");
+
+4.times {
+  println it
+} 
