@@ -1,7 +1,12 @@
+defaultTasks 'hello', 'world'
 task hello << {
   println 'hello, '
 }
 
 task world << {
   println 'world.'
+}
+
+task other << {
+  println 'other !!!'
 }
