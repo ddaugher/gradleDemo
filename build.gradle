@@ -1,10 +1,4 @@
-apply plugin: 'groovy'
-
-repositories {
-  mavenCentral()
-}
-
-dependencies {
-  compile 'org.codehaus.groovy:groovy-all:2.1.5'
-  testCompile group: 'junit', name: 'junit', version: '4.+'
-}
+task configure
+configure << { println ‘configure - step 1‘ }
+configure << { println ‘configure - step 2‘ }
+configure { println ‘configuration block' }
